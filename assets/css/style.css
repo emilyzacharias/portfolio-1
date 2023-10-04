@@ -706,7 +706,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: #49c67b;
   float: left;
   width: 44px;
   height: 44px;
@@ -733,11 +733,25 @@ section {
   color: #728394;
 }
 
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
+
+
+.contact textarea {
+  padding: 10px 12px;
 }
 
+.contact input[type=submit] {
+  background: #49c67b;
+  border: 0;
+  padding: 10px 35px;
+  margin-top: 20px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact input[type=submit]:hover {
+  background: #B0FCCE;
+}
 
 @keyframes animate-loading {
   0% {

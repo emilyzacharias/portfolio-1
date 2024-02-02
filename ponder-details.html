@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Ponder Details</title>
+  <title>CatchFish Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon2.gif" rel="icon" type="image/gif">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -51,11 +50,31 @@
                 <div class="swiper-wrapper align-items-center">
 
                   <div class="swiper-slide">
-                    <img src="assets/img/portfolio/Ponder4.png" alt="">
+                    <img src="assets/img/portfolio/catchfish59.png" alt="">
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="assets/img/portfolio/Ponder5.png" alt="">
+                    <img src="assets/img/portfolio/catchfish58.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/catchfish50.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/catchfish51.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/catchfish52.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/catchfish55.png" alt="">
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/catchfish56.png" alt="">
                   </div>
 
                 </div>
@@ -68,42 +87,34 @@
               <ul>
                 <li><strong>Category</strong>: VisionOS App Development</li>
                 <li><strong>Created for</strong>: NMIX 4410 (New Media Capstone)</li>
-                <li><strong>Project date</strong>: Fall 2023 (in progress)</li>
+                <li><strong>Project date</strong>: Fall 2023</li>
                 <li><strong>Software</strong>: XCode</li>
                 <li><strong>Languages</strong>: SwiftUI</li>
+                <li><strong>Trailer</strong>: <a target=”_blank”  href = https://www.youtube.com/watch?v=1U7Wy8Zzpt4&ab_channel=UGANewMediaInstitute>Link</a></li>
+                <li><strong>Project website</strong>: <a target=”_blank” href = https://projects.nmi.cool/2023/nmc/catchfish/> Link </a></li>
+                <li><strong>Github</strong>: <a target=”_blank” href = https://github.com/emilyzacharias/CatchFish/> Link </a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Creating a mindful fishing game for the Apple Vision Pro</h2>
+              <h2>Creating a playful fishing game for the Apple Vision Pro</h2>
               <h3>Project Overview</h3>
               <p>
-                This project is being created for the New Media Capstone class at UGA. 
-                It is currently in progress and the photos shown are a beta stage of the app. 
-                For this project, I am acting as a sole developer on a team of 5. 
-                We were tasked with researching, designing, and creating an app for the Apple Vision Pro. 
-                We decided to make a mindful fishing game, where a user can take a break from their surroundings and relax in our mixed reality game. 
+                This project was created for a semester-long capstone class, where my group was tasked with creating an app for the Apple Vision Pro. We decided to create a casual fishing game. I took on the sole role of developer in the group and coded the entire project using SwiftUI and XCode.
               </p>
+              <h3>The Problem</h3>
               <p>
-                I am developing the app for this project in XCode using SwiftUI. 
-                Prior to this project, I had developed some simple apps for iOS with swiftUI, so I was familiar with Swift and XCode, but was new to developing for Vision Pro, or any AR application for that matter. 
-                My team knew that we wanted to take advantage of the headset's mixed reality, and I knew this would be my biggest hurdle as developer. 
-                To keep track of development and features I need to add, I have been using Trello, and Git to track my changes.
+                With the Apple Vision Pro being an unreleased product, we knew that there would be few apps available with the product with the release. Our team wanted to create something unique that we knew wouldn’t already exist for the device. This is why we decided to create a casual fishing app with a fun, yet relaxing environment.
               </p>
+              <h3>The Solution</h3>
               <p>
-                My most used resource for developing this app is the developer documentation from Apple. 
-                It provides comprehensive information on SwiftUI's APIs, Swift language features, and best practices.
+                With the idea of a casual fishing game in mind, I began working on development. While I had previously created iOS apps in XCode, VisionOS and 3D elements were completely new territory for me. I started by creating a simple view with a blue background and a 2D fish that moved across the screen by randomly generating two coordinates and the fish moving from one to the other. When the user tapped on the fish, a fish was added to the archive, where the user could see all of the fish they had caught.
               </p>
-              <p>
-                At this stage in development, I have completed an interactive pond, where fish "swim" across. When the user pinches a fish, a pop up appears with more information about the fish that they just caught.
-                Here, the user can change the fishes name, or click a share button to share their catch with friends. 
-                Then, the user can view all of the fish that they have collected in their journal, an interactive fish archive. 
-                This screen is set up as a LazyVGrid, which the user can change the size of in real-time. 
-                As the user continues to catch more fish and add them to their collection, the journal continues to update. 
-                Before the apps release, I am hoping to add challenges to the app and a more immersive pond. 
-              </p>
-              <p>
-                We are hoping for Ponder to be released to the App Store in Spring of 2024!
-              </p>
+              <img src="assets/img/portfolio/Screenshot 2024-02-02 at 3.09.30 PM.png" class="img-fluid" alt="">
+              <p>Next, I focused on making the game more captivating. I added a bobber to the water, and the user was now only able to catch fish if the fish was under the bobber. To add a challenging aspect to the game, I added a bar off to the side, and when the user caught a fish, they now had to align a moving bar with a circle to reel in the fish. I also added a feature where for every 5 fish that the user catches, a new type of fish is unlocked and a new challenges view.</p>
+              <p>Finally, I added the graphics to the game. With the help of my group, we created a moving water background, a 3-dimensional bobber, and 3-dimensional fish.</p>
+              <img src="assets/img/portfolio/Screenshot 2024-02-02 at 3.11.43 PM.png" class="img-fluid" alt="">
+              <h3>The Results</h3>
+              <p>With the core features and graphics of the app done, it was time to add some final details. To the archive, I added a sorting feature. I also added music and sound effects throughout the app to make it more captivating. This project taught me a lot about developing a native app for Apple products, and I look forward to using everything I learned when creating future apps.</p>
             </div>
           </div>
 

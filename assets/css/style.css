@@ -751,6 +751,7 @@ border-top-color: #333;
     align-items: center;
     row-gap: 1em;
     width: fit-content;
+    column-gap: 1em;
   }
 }
 

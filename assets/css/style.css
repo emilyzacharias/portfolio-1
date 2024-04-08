@@ -49,6 +49,10 @@ h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+
+
+
+
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -77,6 +81,25 @@ h6 {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 991px) {
+  #bootstrap-overrides .back-to-top {
+    visibility: hidden;
+  }
+
+  .gradient-background {
+    visibility: hidden;
+  }
+
+  #bootstrap-overrides body {
+    overflow-x: hidden;
+  }
+
+  .particles-js {
+    overflow: hidden;
+    width: 100vh;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -287,12 +310,6 @@ h6 {
     line-height: 24px;
   }
 
-    html, body {
-      overflow-x: hidden;
-    }
-    body {
-      position: relative
-    }
 }
 
 /*--------------------------------------------------------------
@@ -316,7 +333,6 @@ section {
   position: relative;
   color: #B0FCCE;
 }
-
 
 
 .section-title p {
@@ -804,7 +820,7 @@ border-top-color: #333;
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
-  
+  overflow: auto;
 }
 
 .portfolio-details h2 span {

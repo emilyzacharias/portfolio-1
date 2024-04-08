@@ -33,12 +33,12 @@ body {
 }
 
 a {
-  color: #B0FCCE;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #49c67b;
+  color: var(--blue);
   text-decoration: none;
 }
 

@@ -5,9 +5,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
 (function() {
   "use strict";
 
+  
   /**
    * Easy selector helper function
    */
@@ -34,6 +37,19 @@
     }
   }
 
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements with the data-toggle="tooltip" attribute
+    var tooltips = document.querySelectorAll('[data-toggle="tooltip"]');
+  
+    // Iterate over each tooltip element
+    tooltips.forEach(function(tooltip) {
+      // Initialize the tooltip using Bootstrap's Tooltip class
+      new bootstrap.Tooltip(tooltip);
+    });
+  });
+
+  
+  
   /**
    * Easy on scroll event listener 
    */
@@ -142,6 +158,8 @@
     }
   });
 
+  
+
   /**
    * Preloader
    */
@@ -167,6 +185,12 @@
       backDelay: 2000
     });
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      document.getElementById('text').classList.add('slide-in');
+    }, 100);
+  });
 
   /**
    * Skills animation
@@ -283,4 +307,62 @@
    */
   new PureCounter();
 
+  
+
 })()
+
+
+const items = document.querySelectorAll(".portfolio-item");
+
+items.forEach(item => {
+  item.addEventListener("mousemove", (e) => {
+    const { x, y } = item.getBoundingClientRect();
+    item.style.setProperty("--x", e.clientX - x);
+    item.style.setProperty("--y", e.clientY - y);
+  });
+});
+
+
+const containers = document.querySelectorAll(".image-container");
+
+containers.forEach(container => {
+  container.addEventListener("mousemove", (e) => {
+    const { x, y } = container.getBoundingClientRect();
+    container.style.setProperty("--x", e.clientX - x);
+    container.style.setProperty("--y", e.clientY - y);
+  });
+});
+
+const container2 = document.querySelectorAll(".portfolio-extra-info");
+
+container2.forEach(container2 => {
+  container2.addEventListener("mousemove", (e) => {
+    const { x, y } = container2.getBoundingClientRect();
+    container2.style.setProperty("--x", e.clientX - x);
+    container2.style.setProperty("--y", e.clientY - y);
+  });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const portfolioFilters = document.getElementById('portfolio-flters');
+  const backgroundGradient = document.getElementById('background-gradient4');
+
+  portfolioFilters.addEventListener('click', function(event) {
+    const filterItems = portfolioFilters.querySelectorAll('li');
+    filterItems.forEach(function(item) {
+      item.classList.remove('filter-active'); // Remove 'filter-active' class from all items
+    });
+    event.target.classList.add('filter-active'); // Add 'filter-active' class to the clicked item
+
+    // Check if any of the filters (.filter-card, .filter-app, .filter-web) are active
+    const isActiveCardFilter = event.target.dataset.filter === '.filter-card';
+    const isActiveAppFilter = event.target.dataset.filter === '.filter-app';
+    const isActiveWebFilter = event.target.dataset.filter === '.filter-web';
+
+    // Toggle visibility of background gradient based on active filters
+    backgroundGradient.style.display = (isActiveCardFilter || isActiveAppFilter || isActiveWebFilter) ? 'none' : 'block';
+  });
+});
+

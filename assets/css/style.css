@@ -479,9 +479,9 @@ border-top-color: #333;
     align-items: center !important;
   }
 
-  #bootstrap-overrides .portfolio-info {
-    text-align: center;
-    
+  .portfolio-info {
+    text-align: center !important;
+    justify-content: center;
     align-items: center !important;
   }
 

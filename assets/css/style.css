@@ -862,10 +862,12 @@ border-top-color: #333;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 4px 4px 8px rgba(0,0,0, 0.5);
   overflow: hidden;
-  margin: 0 10px 0 10px;
+  margin: 20px 10px 0 10px;
   width: fit-content;
   padding: 15px;
   z-index: 5;
+  font-size: 1rem;
+  
 }
 
 .portfolio-extra-info::after {

@@ -341,9 +341,19 @@ section {
   color: #B0FCCE;
 }
 
+.section-title h4 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
 
-.section-title p {
-  margin-bottom: 0;
+.section-title h5 {
+  margin-top: 30px;
+  color: white;
+  font-size: 1em;
+  opacity: 0.7;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*--------------------------------------------------------------
@@ -373,7 +383,7 @@ section {
   
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -403,6 +413,7 @@ border-top-color: #333;
 
 .image-container {
   width: 120px;
+  min-width: 120px;
   height: 100px;
   margin: 0 10px 0 10px;
   border-radius: 10px;
@@ -926,6 +937,21 @@ border-top-color: #333;
 .portfolio-details-container img {
   width: 100%;
 }
+
+.portfolio-details ul {
+  margin-top: 0;
+  padding-top: 0;
+  list-style-type: none;
+}
+
+.portfolio-details-scroll-to-results {
+  color: var(--blue);
+}
+
+.portfolio-details-scroll-to-results:hover {
+  text-decoration: underline;
+}
+
 
 figcaption {
   padding-bottom: 10%;

@@ -366,3 +366,27 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//moves the gradient in the background
+window.addEventListener('scroll', function() {
+  let scrollPosition = window.scrollY / document.body.scrollHeight;
+  
+  let xOffset1 = 110 - scrollPosition * 170;
+  let yOffset1 = 32 + scrollPosition * -140;
+  
+  let xOffset2 = 100 - scrollPosition * 150;
+  let yOffset2 = 42 + scrollPosition * -140;
+
+  let xOffset3 = -50 - scrollPosition * -200;
+  let yOffset3 = 110 + scrollPosition * -40;
+  
+  let xOffset4 = -60 - scrollPosition * -220;
+  let yOffset4 = 120 + scrollPosition * -40;
+  
+  document.body.style.backgroundImage = 
+    `radial-gradient(circle at ${xOffset1}% ${yOffset1}%, hsla(39.7,57.5%,43.3%,0.3) 0px, transparent 50%),
+    radial-gradient(circle at ${xOffset2}% ${yOffset2}%, hsla(251.9,63.2%,53.1%,0.3) 0px, transparent 50%),
+    radial-gradient(circle at ${xOffset3}% ${yOffset3}%, hsla(39.7,57.5%,43.3%,0.3) 0px, transparent 50%),
+    radial-gradient(circle at ${xOffset4}% ${yOffset4}%, hsla(251.9,63.2%,53.1%,0.3) 0px, transparent 50%)`;
+});
+
+

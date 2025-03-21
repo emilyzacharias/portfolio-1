@@ -68,9 +68,183 @@
         <div class="row gy-4 justify-content-center">
             <h2><span>Catch Fish</span></h2>
             <h5>VisionOS app created with Swift</h5>
-            <p>This project was created for a semester-long capstone class, where my group was tasked with creating an app for the Apple Vision Pro. We decided to create a casual fishing game. I took on the sole role of developer in the group and coded the entire project using SwiftUI and XCode.</p>
+            <p>This project was created for a semester-long capstone class, where my group was tasked with creating an app for the Apple Vision Pro. We decided to create a casual fishing game. I took on the role of sole app developer in the group and coded the entire project using SwiftUI and XCode.</p>
             <h5 class="portfolio-extra-info"><b>Role: </b>developer &nbsp;| &nbsp;<b>Date: </b>2023</h5>
+            <p></p>
+            <p></p>
+            <div class="portfolio-details-container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="assets/img/portfolio/catchfish59.png" alt="Inspiration board image" class="clickable-image">
+                    <figcaption>Start up screen</figcaption>
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/img/portfolio/catchfish58.png" alt="Inspiration board image" class="clickable-image">
+                    <figcaption>"The pond"</figcaption>
+                </div>
+                <div class="col-sm-4">
+                    <img src="assets/img/portfolio/catchfish51.png" alt="Inspiration board image" class="clickable-image">
+                    <figcaption>Fish gallery</figcaption>
+                </div>
+                
+                </div>
+            </div> 
             
+            <h3>Project Overview</h3>
+              <h4>The Assignment</h4>
+              <p>The assignment was to create an app built for the apple vision pro. My team was given full control over what we built and how we built it. We decided to create a fishing game, as that combined many of our interests of playing games and would allow us to showcase our team's individual abilities, such as development, 3D modeling, and music creation. The final deliverables included the app as our main product, a booth presentation, final stage presentation, project website, and project trailer. As the developer in the group, my main role in the project was working on the app itself.</p>
+              <h4>Core project features</h4>
+                <div class="portfolio-details-container">
+                  <div class="row">
+                      <div class="col-sm-3">
+                          <img src="assets/img/catchfish-feature1.png" alt="Inspiration board image">
+                          <figcaption>Utilizes hand tracking and gestures</figcaption>
+                      </div>
+                      <div class="col-sm-3">
+                          <img src="assets/img/catchfish-feature2.png" alt="Inspiration board image">
+                          <figcaption>Exclusive integration with Apple Vision Pro and mixed reality</figcaption>
+                      </div>
+                      <div class="col-sm-3">
+                          <img src="assets/img/catchfish-feature3.png" alt="Inspiration board image">
+                          <figcaption>Fishing challenges and ability to unlock new fish to be caught</figcaption>
+                      </div>
+                      <div class="col-sm-3">
+                          <img src="assets/img/catchfish-feature4.png" alt="Inspiration board image">
+                          <figcaption>Save and rename caught fish</figcaption>
+                      </div>
+                  </div>
+                </div>
+                <p></p>
+              <h4>Technologies Used</h4>
+              <p>CatchFish was built in Xcode, natively for the Apple Vision Pro. Created with Swift programming language, specifically for the VisionOS operating system, with SwiftUI, RealityKit, and UIKit.</p>
+            <h3>My Role and Contribution</h3>
+              <h4>Sole App Developer</h4>
+              <p>I was the only app developer on the project. The app was created prior to the apple vision pro's release. This project led me to being very comfortable with reading code documentation.</p>
+              <p>As the only developer, I had a very critical role, and it was vital I stayed organized and on track with the development timeline. I created a trello board to track every feature that my team and I decided to implement, to ensure every feature got implemented on time.</p>
+              <img src="assets/img/Catchfish-trello.png" alt="Inspiration board image" class="clickable-image">
+                    <figcaption>Mid-semester screenshot of Trello board used by me to stay on track with every feature needed to be implemented.</figcaption>
+              <h4>Team Lead</h4>
+              <p>As team leader, I made sure the team stayed on track with deliverables at each semester checkpoint.</p>
+              <ul>
+                <li>Developed project timeline</li>
+                <li>Monitored progress</li>
+                <li>Ensured quality from all group members</li>
+              </ul>
+            <h3>Technical Details</h3>
+              <h4>Animating the pond</h4>
+                <p>The background of the pond is an animated gif, created by one of my team members in Adobe After Effects. It took a lot of trial and error to make sure that the background looked good, while making sure the file size was not too large so the app ran smoothly.</p>
+                <p>On a z-layer above the pond, is an animated fish that "swims" across the screen. The app first checks if the game is paused. If it is not paused, the fish starts moving across the screen on a timer interval and easeInEaseOut animations, from its current x and y position towards its goal x and y position. If the bobber and the fish's paths cross, the fish stops moving and the timer is paused, and the bobber's depth gets lowered, which gives it a sinking effect. This then triggers the fishing mini game and resets the fish to a new position.</p>
+                
+
+                <div class="portfolio-details-container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <img src="assets/img/catchfish-fishanimation.png" alt="Inspiration board image" class="clickable-image">
+                        <figcaption>Code to move the fish across the screen</figcaption>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="assets/img/portfolio/catchfish58.png" alt="Inspiration board image" class="clickable-image">
+                        <figcaption>"The pond"</figcaption>
+                    </div>
+                    
+                    </div>
+                  </div>
+
+
+              
+                <h4>Catching the fish mini game</h4>
+                <p>Once the user pinches a bobber that is over a fish in the water, it triggers a mini game, where a rectangle moves up and down, and the user must pinch a button when the rectangle and a circle are overlapping. Once the fish is caught, it is added to an array storing all of the caught fish.</p>
+
+                <div class="portfolio-details-container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <img src="assets/img/catchfish-bobberanimation2.png" alt="Inspiration board image" class="clickable-image">
+                        <figcaption>Code to move the rectangle up and down</figcaption>
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="assets/img/catchfish-bobberanimation3.png" alt="Inspiration board image" class="clickable-image">
+                      <figcaption>Code to end the minigame and save the fish</figcaption>
+                  </div>
+                  <div class="col-sm-10">
+                    <img src="assets/img/portfolio/catchfish50.png" alt="Inspiration board image" class="clickable-image">
+                    <figcaption>Caught a fish window</figcaption>
+                </div>
+                <div class="col-sm-2">
+                  <img src="assets/img/catchfish-minigame.png" alt="Inspiration board image" class="clickable-image">
+                  <figcaption>Mini game</figcaption>
+              </div>
+                
+                    
+                    </div>
+                  </div>
+                
+              </div> 
+
+              
+
+
+
+              <h4>Storing the fish</h4>
+              <p>The caught fish are stored in an array within FishList, an observable object. Observable objects are a swiftUI objects that allow for updates that effect the UI, so this allows the journal to properly update when the fish array is updated. The user has the ability to view all caught fish in the fish object view, where they can sort the fish, rename the fish, and favorite specific fish.</p>
+
+              <div class="portfolio-details-container">
+                <div class="row">
+                  <div class="col-sm-6">
+                      <img src="assets/img/catchfish-fishobject.png" alt="Inspiration board image" class="clickable-image">
+                      <figcaption>Fish object</figcaption>
+                  </div>
+                  <div class="col-sm-6">
+                    <img src="assets/img/catchfish-fishlist.png" alt="Inspiration board image" class="clickable-image">
+                    <figcaption>FishList is an observable object storing the fish array.</figcaption>
+                </div>
+                <div class="col-sm-6">
+                  <img src="assets/img/portfolio/catchfish51.png" alt="Inspiration board image" class="clickable-image">
+                  <figcaption>Fish gallery view unsorted</figcaption>
+              </div>
+              <div class="col-sm-6">
+                    <img src="assets/img/portfolio/catchfish52.png" alt="Inspiration board image" class="clickable-image" >
+                <figcaption>Fish gallery view sorted by favorites</figcaption>
+            </div>
+                </div>
+              
+            </div> 
+              <h4>Navigating the app</h4>
+              <p>To navigate the app, I implemented a TabView object. For the navigation bar, I followed Apple Human Interface guidelines to ensure best practices and experience for the user.</p>
+            <h3>THE FINAL PRODUCT</h3>
+            <p>With the core features and graphics of the app done, it was time to add some final details. To the archive, I added a sorting feature. I also added music and sound effects throughout the app to make it more captivating. This project taught me a lot about developing a native app for Apple products, and I look forward to using everything I learned when creating future apps.</p>
+            <div class="finalproduct">
+                <iframe width="600" height="380" src="https://www.youtube.com/embed/1U7Wy8Zzpt4?si=ViwD6sCpCgqv4yW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <figcaption>CatchFish trailer</figcaption>
+                
+                <a href="https://github.com/emilyzacharias/CatchFish" target=”_blank” class="portfolio-visit-site" data-glightbox="type: external" title="Portfolio Details">View on Github &rarr;</a>
+                <a href="./#portfolio" class="portfolio-go-back" data-glightbox="type: external" title="Portfolio Details">&larr; Back to projects</a>
+            </div>
+
+            <h3>additional screenshots</h3>
+            <p></p>
+            <div class="portfolio-details-container">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <img src="assets/img/portfolio/Ponder4.png" alt="Inspiration board image" class="clickable-image">
+                      <figcaption>Pond screen in early stages of development</figcaption>
+                  </div>
+                  <div class="col-sm-6">
+                      <img src="assets/img/portfolio/Ponder5.png" alt="Inspiration board image" class="clickable-image">
+                      <figcaption>Fish gallery view in early stages of development</figcaption>
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <img src="assets/img/portfolio/catchfish55.png" alt="Inspiration board image" class="clickable-image">
+                        <figcaption>Fish detail popup</figcaption>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="assets/img/portfolio/catchfish56.png" alt="Inspiration board image" class="clickable-image">
+                        <figcaption>Challenges view</figcaption>
+                    </div>
+                    </div>
+              </div>
+            <!--
             <h3>The problem</h3>
             <p>With the Apple Vision Pro being an unreleased product, we knew that there would be few apps available with the product with the release. Our team wanted to create something unique that we knew wouldn’t already exist for the device. This is why we decided to create a casual fishing app with a fun, yet relaxing environment.</p>
             <h3>the solution</h3>
@@ -117,7 +291,7 @@
                     <figcaption>Challenges</figcaption>
                 </div>
                 </div>
-            </div>
+            </div> 
             <h3>THE FINAL PRODUCT</h3>
             <p>With the core features and graphics of the app done, it was time to add some final details. To the archive, I added a sorting feature. I also added music and sound effects throughout the app to make it more captivating. This project taught me a lot about developing a native app for Apple products, and I look forward to using everything I learned when creating future apps.</p>
             <div class="finalproduct">
@@ -126,10 +300,18 @@
                 
                 <a href="https://github.com/emilyzacharias/CatchFish" target=”_blank” class="portfolio-visit-site" data-glightbox="type: external" title="Portfolio Details">View on Github &rarr;</a>
                 <a href="./#portfolio" class="portfolio-go-back" data-glightbox="type: external" title="Portfolio Details">&larr; Back to projects</a>
-            </div>
+            </div> -->
         </div>
 
         </div>
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content bg-transparent border-0 d-flex justify-content-center align-items-center">
+                  <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <img id="modalImage" src="" class="img-fluid w-100" style="max-width: 80vw; max-height: 80vh; object-fit: contain;">
+              </div>
+          </div>
+      </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->
@@ -179,6 +361,20 @@
       "max-glare": 0.1,
     });
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+      const modalImage = document.getElementById("modalImage");
+
+      document.querySelectorAll(".clickable-image").forEach(img => {
+          img.addEventListener("click", function () {
+              modalImage.src = this.src; // Update modal image source
+              modal.show(); // Show modal
+          });
+      });
+  });
+</script>
 
 </body>
 
